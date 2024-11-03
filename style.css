@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prociono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
+  background-color: #1a1a1d;
+  color: #f5f5f5;
+  font-family: "Poppins", serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+form {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+form .title {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+form .search-box {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+form input {
+  padding: 15px 220px 15px 25px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c4e1f6;
+  padding: 21px 25px;
+}
+
+.more-btn {
+  display: none;
+  padding: 15px 25px;
+  background-color: #c4e1f6;
+  border-radius: 10px;
+  margin: 25px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.search-content {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+  gap: 16px;
+  padding: 16px;
+  width: 100%;
+}
+
+.search-content img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  form .title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  form input {
+    padding: 10px 90px 10px 25px;
+  }
+
+  form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4e1f6;
+    padding: 15px 20px;
+  }
+}
